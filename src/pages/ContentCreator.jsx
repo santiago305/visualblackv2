@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/content-creator.css';
 import initMain from '../scripts/main.js';
 import initPage from '../scripts/content-creator.js';
@@ -65,22 +66,22 @@ export default function ContentCreator() {
               </a>
             </li>
             <li>
-              <a href="/consulting" data-color="#ff7a1a">
+              <Link to="/consulting" data-color="#ff7a1a">
                 <span className="d" style={{"background": "#ff7a1a"}} />
                 {"Consulting"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/content-creator" data-color="#a66bff" className="active">
+              <Link to="/content-creator" data-color="#a66bff" className="active">
                 <span className="d" style={{"background": "#a66bff"}} />
                 {"Content Creator"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/developer" data-color="#3ad6ff">
+              <Link to="/developer" data-color="#3ad6ff">
                 <span className="d" style={{"background": "#3ad6ff"}} />
                 {"Developer"}
-              </a>
+              </Link>
             </li>
           </ul>
           {" "}
@@ -106,18 +107,18 @@ export default function ContentCreator() {
           {"Inicio"}
         </a>
         {" "}
-        <a href="/consulting" data-color="#ff7a1a">
+        <Link to="/consulting" data-color="#ff7a1a">
           <span className="d" style={{"background": "#ff7a1a"}} />
           {"Consulting"}
-        </a>
-        <a href="/content-creator" data-color="#a66bff">
+        </Link>
+        <Link to="/content-creator" data-color="#a66bff">
           <span className="d" style={{"background": "#a66bff"}} />
           {"Content Creator"}
-        </a>
-        <a href="/developer" data-color="#3ad6ff">
+        </Link>
+        <Link to="/developer" data-color="#3ad6ff">
           <span className="d" style={{"background": "#3ad6ff"}} />
           {"Developer"}
-        </a>
+        </Link>
         {" "}
         <a href="#contacto">
           <small>
@@ -2009,7 +2010,7 @@ export default function ContentCreator() {
             {" "}
             <div className="others">
               {" "}
-              <a href="/consulting" data-color="#ff7a1a" style={{"--x": "#ff7a1a"}} data-cursor="Entrar">
+              <Link to="/consulting" data-color="#ff7a1a" style={{"--x": "#ff7a1a"}} data-cursor="Entrar">
                 {" "}
                 <span className="n">
                   {"01 — visualblack"}
@@ -2028,9 +2029,9 @@ export default function ContentCreator() {
                   </p>
                 </div>
                 {" "}
-              </a>
+              </Link>
               {" "}
-              <a href="/developer" data-color="#3ad6ff" style={{"--x": "#3ad6ff"}} data-cursor="Entrar">
+              <Link to="/developer" data-color="#3ad6ff" style={{"--x": "#3ad6ff"}} data-cursor="Entrar">
                 {" "}
                 <span className="n">
                   {"03 — visualblack"}
@@ -2049,7 +2050,7 @@ export default function ContentCreator() {
                   </p>
                 </div>
                 {" "}
-              </a>
+              </Link>
               {" "}
             </div>
             {" "}
@@ -2172,15 +2173,15 @@ export default function ContentCreator() {
               <h5>
                 {"Departamentos"}
               </h5>
-              <a href="/consulting" data-color="#ff7a1a">
+              <Link to="/consulting" data-color="#ff7a1a">
                 {"Consulting"}
-              </a>
-              <a href="/content-creator" data-color="#a66bff">
+              </Link>
+              <Link to="/content-creator" data-color="#a66bff">
                 {"Content Creator"}
-              </a>
-              <a href="/developer" data-color="#3ad6ff">
+              </Link>
+              <Link to="/developer" data-color="#3ad6ff">
                 {"Developer"}
-              </a>
+              </Link>
             </div>
             {" "}
             <div>

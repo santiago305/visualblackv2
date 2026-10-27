@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import initMain from '../scripts/main.js';
 import { setupPage } from '../lib/setupPage.js';
 
@@ -58,22 +59,22 @@ export default function Home() {
           {" "}
           <ul>
             <li>
-              <a href="/consulting" data-ring="0" data-color="#ff7a1a">
+              <Link to="/consulting" data-ring="0" data-color="#ff7a1a">
                 <span className="d" style={{"background": "#ff7a1a"}} />
                 {"Consulting"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/content-creator" data-ring="1" data-color="#a66bff">
+              <Link to="/content-creator" data-ring="1" data-color="#a66bff">
                 <span className="d" style={{"background": "#a66bff"}} />
                 {"Content Creator"}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/developer" data-ring="2" data-color="#3ad6ff">
+              <Link to="/developer" data-ring="2" data-color="#3ad6ff">
                 <span className="d" style={{"background": "#3ad6ff"}} />
                 {"Developer"}
-              </a>
+              </Link>
             </li>
           </ul>
           {" "}
@@ -99,18 +100,18 @@ export default function Home() {
           {"Inicio"}
         </a>
         {" "}
-        <a href="/consulting" data-color="#ff7a1a">
+        <Link to="/consulting" data-color="#ff7a1a">
           <span className="d" style={{"background": "#ff7a1a"}} />
           {"Consulting"}
-        </a>
-        <a href="/content-creator" data-color="#a66bff">
+        </Link>
+        <Link to="/content-creator" data-color="#a66bff">
           <span className="d" style={{"background": "#a66bff"}} />
           {"Content Creator"}
-        </a>
-        <a href="/developer" data-color="#3ad6ff">
+        </Link>
+        <Link to="/developer" data-color="#3ad6ff">
           <span className="d" style={{"background": "#3ad6ff"}} />
           {"Developer"}
-        </a>
+        </Link>
         {" "}
         <a href="#contacto">
           <small>
@@ -351,9 +352,9 @@ export default function Home() {
                     {" "}
                   </ul>
                   {" "}
-                  <a href="/consulting" className="link" data-color="#ff7a1a" data-cursor="Entrar">
+                  <Link to="/consulting" className="link" data-color="#ff7a1a" data-cursor="Entrar">
                     {"Entrar a Consulting →"}
-                  </a>
+                  </Link>
                   {" "}
                 </div>
                 {" "}
@@ -452,9 +453,9 @@ export default function Home() {
                     {" "}
                   </ul>
                   {" "}
-                  <a href="/content-creator" className="link" data-color="#a66bff" data-cursor="Entrar">
+                  <Link to="/content-creator" className="link" data-color="#a66bff" data-cursor="Entrar">
                     {"Entrar a Content Creator →"}
-                  </a>
+                  </Link>
                   {" "}
                 </div>
                 {" "}
@@ -566,9 +567,9 @@ export default function Home() {
                     {" "}
                   </ul>
                   {" "}
-                  <a href="/developer" className="link" data-color="#3ad6ff" data-cursor="Entrar">
+                  <Link to="/developer" className="link" data-color="#3ad6ff" data-cursor="Entrar">
                     {"Entrar a Developer →"}
-                  </a>
+                  </Link>
                   {" "}
                 </div>
                 {" "}
@@ -684,7 +685,7 @@ export default function Home() {
             {" "}
             <div className="choose">
               {" "}
-              <a href="/consulting" data-color="#ff7a1a" style={{"--x": "#ff7a1a"}} data-cursor="Entrar">
+              <Link to="/consulting" data-color="#ff7a1a" style={{"--x": "#ff7a1a"}} data-cursor="Entrar">
                 {" "}
                 <span className="ch-photo">
                   <img src="/assets/img/alexis-yacila.webp" alt="Alexis Yacila, Head of Consulting" />
@@ -721,9 +722,9 @@ export default function Home() {
                   </span>
                 </div>
                 {" "}
-              </a>
+              </Link>
               {" "}
-              <a href="/content-creator" data-color="#a66bff" style={{"--x": "#a66bff"}} data-cursor="Entrar">
+              <Link to="/content-creator" data-color="#a66bff" style={{"--x": "#a66bff"}} data-cursor="Entrar">
                 {" "}
                 <span className="ch-photo">
                   <img src="/assets/img/joss.webp" alt="Josep Garip Ordoñez Odar, Head of Content" />
@@ -760,9 +761,9 @@ export default function Home() {
                   </span>
                 </div>
                 {" "}
-              </a>
+              </Link>
               {" "}
-              <a href="/developer" data-color="#3ad6ff" style={{"--x": "#3ad6ff"}} data-cursor="Entrar">
+              <Link to="/developer" data-color="#3ad6ff" style={{"--x": "#3ad6ff"}} data-cursor="Entrar">
                 {" "}
                 <span className="ch-photo">
                   <img src="/assets/img/santiago-yacila.webp" alt="Santiago Yacila, Head of Engineering" />
@@ -799,7 +800,7 @@ export default function Home() {
                   </span>
                 </div>
                 {" "}
-              </a>
+              </Link>
               {" "}
             </div>
             {" "}
@@ -1119,15 +1120,15 @@ export default function Home() {
               <h5>
                 {"Departamentos"}
               </h5>
-              <a href="/consulting" data-color="#ff7a1a">
+              <Link to="/consulting" data-color="#ff7a1a">
                 {"Consulting"}
-              </a>
-              <a href="/content-creator" data-color="#a66bff">
+              </Link>
+              <Link to="/content-creator" data-color="#a66bff">
                 {"Content Creator"}
-              </a>
-              <a href="/developer" data-color="#3ad6ff">
+              </Link>
+              <Link to="/developer" data-color="#3ad6ff">
                 {"Developer"}
-              </a>
+              </Link>
             </div>
             {" "}
             <div>
